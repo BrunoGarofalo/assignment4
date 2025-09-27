@@ -262,3 +262,17 @@ class ModuloCalculation(Calculation):
         return Operation.modulo(self.a, self.b) # pragma: no cover
     
 
+#################### ADDED ROOT OPERATION ######################
+@CalculationFactory.register_calculation('root')
+class RootCalculation(Calculation):
+    """
+    MultiplyCalculation represents a multiplication operation.
+   
+    By encapsulating the multiplication logic here, we achieve a clear separation of
+    concerns, making it easy to adjust the multiplication logic without affecting other calculations.
+    """
+
+
+    def execute(self) -> float:
+        # Calls the multiplication method from the Operation module to perform the multiplication.
+        return Operation.root(self.a, self.b) # pragma: no cover
