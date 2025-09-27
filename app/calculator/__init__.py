@@ -46,6 +46,8 @@ Examples:
     subtract 15.5 3.2
     multiply 7 8
     divide 20 4
+    modulo 7 3 1
+    root 4 2 2
     """
     print(help_message)
 
