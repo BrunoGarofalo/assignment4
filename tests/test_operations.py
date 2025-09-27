@@ -389,3 +389,30 @@ def test_modulo_by_zero():
         Operation.modulo(10.0, 0.0)
 
 
+# -----------------------------------------------------------------------------------
+# Test root operation
+# -----------------------------------------------------------------------------------
+
+
+def test_root():
+    # Arrange
+    a = 4.0
+    b = 2.0
+    expected_result = 2.0
+
+
+    # Act
+    result = Operation.root(a, b)
+
+
+    # Assert
+    assert result == expected_result, f"Expected {a} / ({b}) to be {expected_result}, got {result}"
+
+
+# -----------------------------------------------------------------------------------
+# Test root operation with zero degree
+# -----------------------------------------------------------------------------------
+def test_root_with_zero_degree():
+    # Act & Assert
+    with pytest.raises(ValueError, match="Cannot compute zeroth root."):
+        Operation.root(9.0, 0.0)
