@@ -33,6 +33,8 @@ Usage:
         subtract  : Subtracts the second number from the first.
         multiply  : Multiplies two numbers.
         divide    : Divides the first number by the second.
+        root      : Calculates the root of the first number
+        modulo    : Calculates the remainder when a is divided by b
 
 Special Commands:
     help      : Display this help message.
