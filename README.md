@@ -284,5 +284,6 @@ Then submit the GitHub repository link as instructed.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [GitHub SSH Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-# UPDATES:
-- 📰 Added New Modulo operation + unit tests
+# 📰 UPDATES:
+- Added New Modulo operation + unit tests
+- Added New Root operation + unit tests
